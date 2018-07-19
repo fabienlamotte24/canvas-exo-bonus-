@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.Css">
+  <title>Exercice 3 Partie 2</title>
+</head>
+<body>
+  <canvas id="canvas" width="2000" height="500"></canvas>
+  <script>
+    var c = document.getElementById('canvas');
+    var ctx = c.getContext('2d');
+    /*cadre du logo*/
+    ctx.beginPath();
+    ctx.fillStyle = 'white';
+    ctx.strokeStyle = 'black';
+    ctx.moveTo(600, 50);
+    ctx.lineTo(1400,50);
+    ctx.lineTo(1400,450);
+    ctx.lineTo(600,450);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+    /*E*/
+    ctx.beginPath();
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = '5';
+    ctx.moveTo(850,120);
+    ctx.lineTo(750,120);
+    ctx.lineTo(750,350);
+    ctx.lineTo(850,350);
+    ctx.moveTo(750,240);
+    ctx.lineTo(850,240);
+    ctx.stroke();
+    /*2*/
+    ctx.beginPath();
+    ctx.lineWidth = '10';
+    ctx.strokeStyle = '#EA4E1D';
+    ctx.moveTo(850,120);
+    ctx.bezierCurveTo(900,80,1150,-50,800,420);
+    ctx.bezierCurveTo(800,420,920,370,930,380);
+    ctx.stroke();
+    /*N*/
+    ctx.beginPath();
+    ctx.lineWidth = '5';
+    ctx.strokeStyle = 'black';
+    ctx.moveTo(985,350);
+    ctx.lineTo(985,120);
+    ctx.lineTo(1130,350);
+    ctx.lineTo(1130,120);
+    ctx.stroke();
+    /*Dessin losange 1*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#EBEBEB';
+    ctx.fillRect(1190,130,30,20);
+    ctx.moveTo(1190,130);
+    ctx.lineTo(1205,115);
+    ctx.lineTo(1220,130);
+    ctx.closePath();
+    ctx.moveTo(1190,150);
+    ctx.lineTo(1205,165);
+    ctx.lineTo(1220,150);
+    ctx.closePath();
+    ctx.fill();
+    /*Dessin losange 2*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#DBDADB';
+    ctx.fillRect(1170,175,30,20);
+    ctx.moveTo(1170,175);
+    ctx.lineTo(1185,160);
+    ctx.lineTo(1200,175);
+    ctx.closePath();
+    ctx.moveTo(1170,195);
+    ctx.lineTo(1185,210);
+    ctx.lineTo(1200,195);
+    ctx.closePath();
+    ctx.fill();
+    /*Dessin losange 3*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#595656';
+    ctx.fillRect(1210,175,30,20);
+    ctx.moveTo(1210,175);
+    ctx.lineTo(1225,160);
+    ctx.lineTo(1240,175);
+    ctx.closePath();
+    ctx.moveTo(1210,195);
+    ctx.lineTo(1225,210);
+    ctx.lineTo(1240,195);
+    ctx.closePath();
+    ctx.fill();
+    /*Dessin losange 4*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#EA4E1A';
+    ctx.fillRect(1190,220,30,20);
+    ctx.moveTo(1190,220);
+    ctx.lineTo(1205,205);
+    ctx.lineTo(1220,220);
+    ctx.closePath();
+    ctx.moveTo(1190,240);
+    ctx.lineTo(1205,255);
+    ctx.lineTo(1220,240);
+    ctx.closePath();
+    ctx.fill();
+    /*Dessin losange 5*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#878787';
+    ctx.fillRect(1170,260,30,20);
+    ctx.moveTo(1170,260);
+    ctx.lineTo(1185,245);
+    ctx.lineTo(1200,260);
+    ctx.closePath();
+    ctx.moveTo(1170,280);
+    ctx.lineTo(1185,295);
+    ctx.lineTo(1200,280);
+    ctx.closePath();
+    ctx.fill();
+    /*Dessin losange 6*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#ECECEC';
+    ctx.fillRect(1210,260,30,20);
+    ctx.moveTo(1210,260);
+    ctx.lineTo(1225,245);
+    ctx.lineTo(1240,260);
+    ctx.closePath();
+    ctx.moveTo(1210,280);
+    ctx.lineTo(1225,295);
+    ctx.lineTo(1240,280);
+    ctx.closePath();
+    ctx.fill();
+    /*Dessin petit losange 1*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#ECECEC';
+    ctx.fillRect(1243,190,10,5);
+    ctx.moveTo(1243,190);
+    ctx.lineTo(1248,185);
+    ctx.lineTo(1253,190);
+    ctx.closePath();
+    ctx.moveTo(1243,195);
+    ctx.lineTo(1248,200);
+    ctx.lineTo(1253,195);
+    ctx.closePath();
+    ctx.fill();
+    /*Dessin petit losange 2*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#878787';
+    ctx.fillRect(1250,200,10,5);
+    ctx.moveTo(1250,200);
+    ctx.lineTo(1255,195);
+    ctx.lineTo(1260,200);
+    ctx.closePath();
+    ctx.moveTo(1250,205);
+    ctx.lineTo(1255,210);
+    ctx.lineTo(1260,205);
+    ctx.closePath();
+    ctx.fill();
+    /*Dessin petit losange 3*/
+    ctx.beginPath();
+    ctx.lineWidth = '1';
+    ctx.fillStyle = '#EA4E1A';
+    ctx.fillRect(1270,195,10,5);
+    ctx.moveTo(1270,195);
+    ctx.lineTo(1275,190);
+    ctx.lineTo(1280,195);
+    ctx.closePath();
+    ctx.moveTo(1270,200);
+    ctx.lineTo(1275,205);
+    ctx.lineTo(1280,200);
+    ctx.closePath();
+    ctx.fill();
+    /*Texte E2N*/
+    ctx.fillStyle = '#949494';
+    var text = 'Ecole du Numérique';
+    var text2 = 'du Noyonnais';
+    ctx.font = '22pt verdana';
+    ctx.fillText(text,970,385);
+    ctx.fillText(text2,970,420);
+  </script>
+</body>
+</html>
